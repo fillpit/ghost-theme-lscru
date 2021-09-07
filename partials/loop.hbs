@@ -19,7 +19,9 @@
       </a>
       {{#if featured}}
         <a href="{{url}}" class="m-article-card__featured js-tooltip" data-tippy-content="{{t "Featured"}}" aria-label="{{t "Featured"}}">
-          <span class="icon-star" aria-hidden="true"></span>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-Star"></use>
+          </svg>
         </a>
       {{/if}}
     </div>

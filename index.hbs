@@ -51,7 +51,7 @@ into the {body} of the default.hbs template --}}
                               #featured-bg-{{id}} {
                                 background-image: url({{img_url feature_image size='l'}});
                               }
-                            
+
                               @media(max-width: 768px) {
                                 #featured-bg-{{id}} {
                                   background-image: url({{img_url feature_image size='m'}});
@@ -74,7 +74,9 @@ into the {body} of the default.hbs template --}}
                           {{/if}}
                         </div>
                         <div class="m-featured-article__ribbon">
-                          <span class="icon-star"></span>
+                          <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-Star"></use>
+                          </svg>
                           <span>{{t "Featured"}}</span>
                         </div>
                         <a href="{{url}}" class="m-featured-article__content">

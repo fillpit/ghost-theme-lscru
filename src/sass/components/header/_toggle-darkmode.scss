@@ -31,8 +31,8 @@
     @extend .focusable;
   }
 
-  input::-moz-focus-inner { 
-    border: 0; 
+  input::-moz-focus-inner {
+    border: 0;
   }
 
   div {
@@ -45,12 +45,13 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    padding: 5px;
     overflow: hidden;
     background-color: var(--toggle-darkmode-background-color);
     z-index: 1;
   }
 
-  span {
+  svg {
     color: var(--titles-color);
     font-size: 0.9375rem;
 
