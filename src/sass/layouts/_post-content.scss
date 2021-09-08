@@ -104,7 +104,7 @@
   }
 
   a {
-    color: var(--primary-foreground-color);
+    color: var(--link-color);
     text-decoration: underline;
     @include transition(color linear 0.2s);
 
@@ -501,7 +501,7 @@
     flex-grow: 1;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 10px;
+    padding: 20px;
   }
 
   .kg-bookmark-title {
