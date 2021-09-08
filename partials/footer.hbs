@@ -4,20 +4,32 @@ This footer template is shared across all the pages.
 
 <footer class="m-footer">
   <div class="m-footer__content">
+    <div class="m-footer-logo">
+      {{#if @site.logo}}
+      <a href="{{@site.url}}" class="m-logo in-mobile-topbar">
+        <img src="{{@site.logo}}" alt="{{@site.title}}">
+      </a>
+      {{else}}
+      <a href="{{@site.url}}" class="m-site-name in-mobile-topbar">
+        {{@site.title}}
+      </a>
+      {{/if}}
+    </div>
+
     <nav class="m-footer-social">
       {{#if @site.facebook}}
-        <a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-facebook"></use>
-          </svg>
-        </a>
+      <a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-facebook"></use>
+        </svg>
+      </a>
       {{/if}}
       {{#if @site.twitter}}
-        <a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener" aria-label="Twitter">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-twitter"></use>
-          </svg>
-        </a>
+      <a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener" aria-label="Twitter">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-twitter"></use>
+        </svg>
+      </a>
       {{/if}}
       <a href="{{@site.url}}/rss" aria-label="RSS">
         <svg class="icon" aria-hidden="true">
@@ -25,13 +37,20 @@ This footer template is shared across all the pages.
         </svg>
       </a>
     </nav>
-    <p class="m-footer-copyright">
-      <span>{{@site.title}} &copy; {{date format="YYYY"}}</span>
-      <span>&nbsp; &bull; &nbsp;</span>
-      <span>{{t "Published with"}} <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
-    </p>
-    <p class="m-footer-copyright jslicense">
-      <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank" id="recordId">粤ICP备18139752号</a>
-    </p>
-  </div>
+    <div class="m-footer-copyright">
+      <div class="link">
+        <span><a target="_blank" href="https://sspai.com/page/client">Ghost</a></span>
+        <span><a href="mailto:kenfei@aliyun.com">联系我们</a></span>
+        <span><a target="_blank" href="/">商务合作</a></span>
+        <span><a target="_blank" href="/">成为作者</a></span>
+        <span><a target="_blank" href="/">关于我们</a></span>
+        <span><a target="_blank" href="/">用户协议</a></span>
+        <span><a target="_blank" href="/">常见问题</a></span>
+        <div class="footer-txt-pc">
+          <span>{{@site.title}} &copy; {{date format="YYYY"}}</span> |
+          <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank" id="beian">备案号</a> |
+          CC BY-NC 4.0
+        </div>
+      </div>
+    </div>
 </footer>

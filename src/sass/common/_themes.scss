@@ -1,18 +1,23 @@
 :root,
 [data-theme="light"] {
-  --background-color: #fff;
-  --primary-foreground-color: #4c4e4d;
-  --secondary-foreground-color: #f7f7f8;
+  // 背景
+  --background-color: #f4f4f4;
+  // 主要的突出色
+  --primary-foreground-color: #fff;  // 4c4e4d
+  // 次要的突出色
+  --secondary-foreground-color: #4c4e4d;
+  // 主要的细节色
   --primary-subtle-color: #0470ee;
+  // 次要的细节色
   --secondary-subtle-color: #8e8787;
   --titles-color: #292525;
-  --link-color: #133467;
+  --link-color: #d71a1b;
   --primary-border-color: #9b9b9b;
   --secondary-border-color: aliceblue;
   --article-shadow-normal: 0 10px 10px rgba(0,0,0,0.08);
   --article-shadow-hover: 0 4px 60px 0 rgba(0,0,0,0.2);
   --transparent-background-color: rgba(255,255,255,0.99);
-  --footer-background-color: #133467;
+  --footer-background-color: #fff;
   --submenu-shadow-color-opacity: 0.25;
   --button-shadow-color-normal: rgba(108, 108, 108, 0.2);
   --button-shadow-color-hover: rgba(108, 108, 108, 0.3);
@@ -53,19 +58,19 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --background-color: #232222;
-    --primary-foreground-color: #b8b8b8;
-    --secondary-foreground-color: #373737;
+    --background-color: #181514;
+    --primary-foreground-color: #232222;
+    --secondary-foreground-color: #b8b8b8;
     --primary-subtle-color: #2c2fe6;
     --secondary-subtle-color: #7f7f7f;
     --titles-color: #fff;
-    --link-color: #b6b7f6;
+    --link-color: #893128;
     --primary-border-color: #1d1d1d;
     --secondary-border-color: #0f0f0f;
     --article-shadow-normal: 0 4px 5px 5px rgba(0,0,0,0.1);
     --article-shadow-hover: 0 4px 5px 10px rgba(0,0,0,0.1);
     --transparent-background-color: rgba(0,0,0,0.99);
-    --footer-background-color: #080808;
+    --footer-background-color: #232222;
     --submenu-shadow-color-opacity: 0.55;
     --button-shadow-color-normal: rgba(10, 10, 10, 0.5);
     --button-shadow-color-hover: rgba(10, 10, 10, 0.5);
@@ -77,4 +82,5 @@
     --header-menu-gradient-first-color: rgba(17, 17, 17, 0);
     --header-menu-gradient-second-color: rgba(17, 17, 17, 0.65);
   }
+
 }

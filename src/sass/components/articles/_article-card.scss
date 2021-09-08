@@ -197,7 +197,7 @@
   height: 200px;
   overflow: hidden;
   border-radius: 0 0 10px 10px;
-  background-color: var(--background-color);
+  background-color: var(--primary-foreground-color);
 
   @include respond-to('medium') {
     padding-top: 53px;

@@ -2,7 +2,7 @@
   "name": "liebling",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js", 
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "get-database": "curl https://raw.githubusercontent.com/eddiesigner/ghost-db/master/ghost.db -o ghost.db",
@@ -51,6 +51,7 @@
     "fitvids": "^2.0.0",
     "fuse.js": "^6.4.6",
     "headroom.js": "^0.12.0",
+    "iclipboard": "^1.0.1",
     "jquery": "^3.6.0",
     "medium-zoom": "^1.0.6",
     "shave": "^2.5.10",

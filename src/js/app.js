@@ -44,6 +44,8 @@ $(() => {
   const $mainNavLeft = $('.js-main-nav-left')
   const $newsletterElements = $('.js-newsletter')
   const currentSavedTheme = localStorage.getItem('theme')
+  // 备案号
+  const $beian = $('#beian')
 
   let fuse = null
   let submenuIsOpen = false
@@ -166,6 +168,12 @@ $(() => {
         $mainNav.removeClass('toggle-overflow')
         $mainNavLeft.removeClass('toggle-overflow')
       }
+    }
+  }
+
+  const fillBeianCode = () => {
+    if (typeof beian !== 'undefined' && beian) {
+      $beian.text(beian)
     }
   }
 
@@ -386,4 +394,6 @@ $(() => {
   checkForActionParameter()
   tryToRemoveNewsletter()
   trySearchFeature()
+  // 备案号
+  fillBeianCode()
 })

@@ -227,3 +227,9 @@ into the {body} of the default.hbs template --}}
 {{#contentFor "scripts"}}
   <script defer src="{{asset "js/post.js"}}"></script>
 {{/contentFor}}
+
+{{!-- 代码美化 --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>

@@ -16,7 +16,7 @@
   }
 
   &.filled {
-    background-color: var(--secondary-foreground-color);
+    background-color: var(--primary-foreground-color);
     @include bs(0 2px 4px var(--button-shadow-color-normal));
     @include transition(all .25s cubic-bezier(.02,.01,.47,1));
 

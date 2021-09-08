@@ -17,14 +17,16 @@ This header template is shared across all the pages.
       </a>
     {{/if}}
     <button class="m-icon-button in-mobile-topbar js-open-search" aria-label="{{t "Open search"}}">
-      <span class="icon-search" aria-hidden="true"></span>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-sousuoxiao"></use>
+      </svg>
     </button>
   </div>
 
   <div class="m-menu js-menu">
     <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="{{t "Close menu"}}">
       <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-close-icon"></use>
+        <use xlink:href="#icon-close"></use>
       </svg>
     </button>
     <div class="m-menu__main" data-aos="fade-down">

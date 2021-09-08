@@ -1,0 +1,11 @@
+:root,
+[data-theme="light"] {
+  @import "./atom-one-light";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @import "./atom-one-dark";
+  }
+
+}
