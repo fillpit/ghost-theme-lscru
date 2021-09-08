@@ -23,7 +23,9 @@ This header template is shared across all the pages.
 
   <div class="m-menu js-menu">
     <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="{{t "Close menu"}}">
-      <span class="icon-close"></span>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-close-icon"></use>
+      </svg>
     </button>
     <div class="m-menu__main" data-aos="fade-down">
       <div class="l-wrapper">
