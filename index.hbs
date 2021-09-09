@@ -96,10 +96,14 @@ into the {body} of the default.hbs template --}}
               </div>
               <div data-glide-el="controls" class="glide__arrows js-featured-slider-controls">
                 <button data-glide-dir="<" class="m-icon-button in-featured-articles glide-prev js-featured-slider-previous" aria-label="{{t "Previous"}}">
-                  <span class="icon-arrow-left" aria-hidden="true"></span>
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
                 </button>
                 <button data-glide-dir=">" class="m-icon-button in-featured-articles glide-next js-featured-slider-next" aria-label="{{t "Next"}}">
-                  <span class="icon-arrow-right" aria-hidden="true"></span>
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-arrow-right"></use>
+                  </svg>
                 </button>
               </div>
             </div>
