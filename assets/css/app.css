@@ -560,18 +560,18 @@ textarea,
 
 [data-theme=dark] {
   --background-color: #232222;
-  --primary-foreground-color: #b8b8b8;
-  --secondary-foreground-color: #373737;
+  --primary-foreground-color: #181514;
+  --secondary-foreground-color: #b8b8b8;
   --primary-subtle-color: #2c2fe6;
   --secondary-subtle-color: #7f7f7f;
-  --titles-color: #fff;
-  --link-color: #b6b7f6;
+  --titles-color: #f7f7f7;
+  --link-color: #893128;
   --primary-border-color: #1d1d1d;
   --secondary-border-color: #0f0f0f;
   --article-shadow-normal: 0 4px 5px 5px rgba(0,0,0,0.1);
   --article-shadow-hover: 0 4px 5px 10px rgba(0,0,0,0.1);
   --transparent-background-color: rgba(0,0,0,0.99);
-  --footer-background-color: #080808;
+  --footer-background-color: #181514;
   --submenu-shadow-color-opacity: 0.55;
   --button-shadow-color-normal: rgba(10, 10, 10, 0.5);
   --button-shadow-color-hover: rgba(10, 10, 10, 0.5);
@@ -586,19 +586,19 @@ textarea,
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme=light]) {
-    --background-color: #181514;
-    --primary-foreground-color: #232222;
+    --background-color: #232222;
+    --primary-foreground-color: #181514;
     --secondary-foreground-color: #b8b8b8;
     --primary-subtle-color: #2c2fe6;
     --secondary-subtle-color: #7f7f7f;
-    --titles-color: #fff;
+    --titles-color: #f7f7f7;
     --link-color: #893128;
     --primary-border-color: #1d1d1d;
     --secondary-border-color: #0f0f0f;
     --article-shadow-normal: 0 4px 5px 5px rgba(0,0,0,0.1);
     --article-shadow-hover: 0 4px 5px 10px rgba(0,0,0,0.1);
     --transparent-background-color: rgba(0,0,0,0.99);
-    --footer-background-color: #232222;
+    --footer-background-color: #181514;
     --submenu-shadow-color-opacity: 0.55;
     --button-shadow-color-normal: rgba(10, 10, 10, 0.5);
     --button-shadow-color-hover: rgba(10, 10, 10, 0.5);
@@ -1564,7 +1564,7 @@ fieldset {
   display: none;
 }
 .m-header.with-picture {
-  background-color: var(--background-color);
+  background-color: var(--primary-foreground-color);
 }
 
 .m-mobile-topbar {

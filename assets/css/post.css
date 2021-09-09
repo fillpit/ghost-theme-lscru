@@ -222,7 +222,7 @@
   font-style: italic;
 }
 .l-post-content a {
-  color: var(--primary-foreground-color);
+  color: var(--link-color);
   text-decoration: underline;
   transition: color linear 0.2s;
 }
@@ -522,7 +522,7 @@
   flex-grow: 1;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 10px;
+  padding: 20px;
 }
 .l-post-content .kg-bookmark-title {
   font-size: 1.125rem;
