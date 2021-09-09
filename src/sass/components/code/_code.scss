@@ -3,6 +3,10 @@
   @import "./atom-one-light";
 }
 
+[data-theme="dark"] {
+  @import "./atom-one-dark";
+}
+
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     @import "./atom-one-dark";
