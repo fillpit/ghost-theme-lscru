@@ -51,7 +51,7 @@ git clone https://github.com/fillpit/liebling.git
 
 ## License
 
-Copyright (c) 2019-2020 Eduardo Gómez. Released under the [MIT license](https://github.com/eddiesigner/liebling/blob/master/LICENSE).
+Copyright (c) 2019-present Eduardo Gómez. Released under the [MIT license](https://github.com/eddiesigner/liebling/blob/master/LICENSE).
 
 ## Credits
 
